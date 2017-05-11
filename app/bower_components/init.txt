@@ -1,0 +1,1 @@
+Here all the files installed using the bower install will be saved. This contains the third party modules for the app
