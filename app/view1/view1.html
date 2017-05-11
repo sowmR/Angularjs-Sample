@@ -1,5 +1,7 @@
-<p>This is the partial for view 1.</p>
+<p>Some Sample code to show Angular Js features</p>
 
+<h3> Form</h3>
+<p> This form is unit test automated and use of $watch</p> 
 <h1>{{about.title}}</h1>
 <p>{{about.body}}</p>
 <hr />
@@ -9,4 +11,17 @@
         <input type="text" class="form-control" ng-model="about.message" placeholder="Message" />
         <button type="submit" class="btn btn-default" ng-click="about.updateMessage(about.message)">Update Message</button>
     </form>
+</div>
+<hr/>
+<div> <h3>Button Disable</h3></div>
+<div>
+	<label>
+		<input type="checkbox" ng-model="checked"/>
+		<button ng-disabled="checked">Disable this  button by clicking on the checkbox.</button>
+	</label>
+</div>
+<hr/>
+<div> <h3>Button Disable</h3></div>
+<div>
+
 </div>
