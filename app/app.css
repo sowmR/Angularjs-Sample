@@ -1,12 +1,14 @@
 /* app css stylesheet */
 body{
- padding:3px;
+	padding:3px;	
 }
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
+  margin-top: 0;
   padding: 0 0 0.5em;
+  background-color: #fb768e;
 }
 
 .menu:before {
@@ -25,3 +27,4 @@ body{
   content: "|";
   padding-right: 0.3em;
 }
+
