@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <base href="/">
+ 
   <title ng-bind="title">AngularJS Test</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,12 +30,13 @@
   <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">AngularJS Test Site</a>
+                    <a class="navbar-brand" href="#!/">AngularJS Test Site</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/view1"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="/view2"><i class="fa fa-shield"></i> Form Sample</a></li>
+                    <li><a href="#!/view1"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#!/view2"><i class="fa fa-shield"></i> Register Form</a></li>
+                    <li><a href="#!/payment"><i class="fa fa-credit-card"></i> Payment Form</a></li>
                 </ul>
             </div>
             </nav>
@@ -43,15 +44,25 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
-  <div ng-view></div>
-
+<div class="page-wrapper">
+  <div class="col-md-3">
+      <h3><a ng-href="#!/table"> Sample Tables</a></h3>
+      <h3><a ng-href="#!/view2"> Sample Forms</a></h3>
+  </div>
+  <div class="col-md-8">
+    <div ng-view></div>
+  
+  </div>
+  
+</div>
+  
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-sanitize.js"></script>
   <script src="app.js"></script>
   <!-- View1-->
   <script src="view1/view1.module.js"></script>
@@ -60,6 +71,10 @@
   <!-- View2-->
   <script src="view2/view2.module.js"></script>
   <script src="view2/view2.controller.js"></script>
+  <!--Table-->
+  <script src="tables/table.js"></script>
+  
+  <script src="payment/payment.js"></script>
   <!-- Version-->
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
