@@ -1,0 +1,33 @@
+/*Table CSS*/
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table {
+    max-width: 100%;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table .product-table{
+    border-collapse: collapse;
+}
+.product-table td {
+	vertical-align: middle;
+}
+.product-table img{
+	max-height:150px;
+	min-width:50px
+}
