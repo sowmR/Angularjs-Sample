@@ -6,8 +6,6 @@ angular.module('myApp', [
   "ngSanitize",
   'myApp.view1',
   'myApp.view2',
-  'myApp.table',
-  'paymentApp',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
